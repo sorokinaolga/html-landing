@@ -1,12 +1,5 @@
 @import 'fonts';
 @import 'vars';
 
-body {
-    font-family: $ff-main;
-    font-size: 16px;
-}
-
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-}
+@import 'base';
+@import 'header';
