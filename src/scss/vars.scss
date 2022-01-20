@@ -1,9 +1,12 @@
+$color-black: #000;
+$color-white: #fff;
+
 $ff-main: 'Roboto';
 $ff-main-bold: 'Roboto-Bold';
 
-$ff-color-main: #000;
+$ff-color-main: $color-black;
 $ff-color-secondary: #55524e;
-$ff-color-light: #fff;
+$ff-color-light: $color-white;
 
 $color-main: #f3f3f2;
 $color-secondary: #fbede4;
