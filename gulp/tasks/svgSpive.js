@@ -13,9 +13,9 @@ export const svgSprive = () => {
                 stack: {
                     sprite: `../icons/icons.svg`,
                     // Создавать страницу с перечнем иконок
-                    example: true
+                    example: false
                 }
             },
         }))
-        .pipe(app.gulp.dest(`${app.path.build.images}`));
+        .pipe(app.gulp.dest(`${app.path.srcFolder}/img/`));
 }
