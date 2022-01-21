@@ -1,0 +1,94 @@
+.advantages {
+    padding: 92px 102px 95px;
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        h2 {
+            max-width: 314px;
+            font-family: $ff-main;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 32px;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        p {
+            font-size: 19px;
+            line-height: 30px;
+            color: #787573;
+        }
+    }
+
+    a {
+        display: block;
+        padding-bottom: 45px;
+        color: $ff-color-main;
+        line-height: 24px;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            font-weight: 700;
+        }
+    }
+
+    &__lease {
+        background-image: url(../img/icons/icons.svg#i-adv-lease);
+        background-size: 135px 80px;
+        background-position: -20px 0;
+    }
+    &__bounce {
+        background-image: url(../img/icons/icons.svg#i-adv-bounce);
+        background-size: 155px 81px;
+        background-position: -20px 0;
+    }
+    &__keep-cash {
+        background-image: url(../img/icons/icons.svg#i-adv-keep-cash);
+        background-size: 151px 80px;
+        background-position: -18px 0;
+    }
+    &__enjoy {
+        background-image: url(../img/icons/icons.svg#i-adv-enjoy);
+        background-size: 139px 80px;
+        background-position: -30px 0;
+    }
+    &__7-free {
+        background-image: url(../img/icons/icons.svg#i-adv-7-free);
+        background-size: 158px 80px;
+        background-position: 0 0;
+    }
+    &__rest-easy {
+        background-image: url(../img/icons/icons.svg#i-adv-rest-easy);
+        background-size: 138px 80px;
+        background-position: -4px 0;
+    }
+
+    &__description {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 55px;
+
+        div {
+            padding-top: 96px;
+            background-repeat: no-repeat;
+        }
+
+        dt {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        dd {
+            color: $ff-color-secondary;
+            font-size: 16px;
+            line-height: 24px;
+            margin-left: 0;
+        }
+    }
+}
