@@ -1,0 +1,50 @@
+.about {
+    position: relative;
+    background-color: $color-accent;
+    padding: 120px 0 120px 102px;
+    color: $ff-color-light;
+
+    h2 {
+        max-width: 683px;
+        font-size: 48px;
+        line-height: 58px;
+        font-weight: 400;
+        margin: 0;
+        padding: 48px 0 104px;
+    }
+
+    &__subtitle {
+        line-height: 22px;
+        font-weight: 400;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        list-style: none;
+        margin: 32px 0 0;
+        padding: 0 102px 0 0;
+    }
+
+    &__item {
+        line-height: 16px;
+        padding-top: 16px;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 125px;
+        height: 123px;
+        bottom: -58px;
+        left: 162px;
+        background: url(../img/icons/icons.svg#i-about) no-repeat;
+    }
+}
