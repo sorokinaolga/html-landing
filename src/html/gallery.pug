@@ -1,6 +1,34 @@
 section.gallery
     h2 See where members love to live
     p We offer over 80 cities, and counting, across the U.S. and encourage you to explore with our free, 7-day travel benefit.
+    .swiper.gallery-slider
+        .swiper-wrapper
+            .swiper-slide
+                .gallery-slider__image
+                    img(src="@img/city-gal-1.png", width="288", height="208" alt="city")
+            .swiper-slide
+                .gallery-slider__image
+                    img(src="@img/city-gal-2.png", width="288", height="208" alt="city")
+            .swiper-slide
+                .gallery-slider__image
+                    img(src="@img/city-gal-3.png", width="288", height="208" alt="city")
+            .swiper-slide
+                .gallery-slider__image
+                    img(src="@img/city-gal-4.png", width="288", height="208" alt="city")
+            .swiper-slide
+                .gallery-slider__image
+                    img(src="@img/city-gal-5.png", width="288", height="208" alt="city")
+            .swiper-slide
+                .gallery-slider__image
+                    img(src="@img/city-gal-1.png", width="288", height="208" alt="city")
+            .swiper-slide
+                .gallery-slider__image
+                    img(src="@img/city-gal-2.png", width="288", height="208" alt="city")
+        .gallery-slider__control
+            .gallery-slider__prev &larr;
+            .gallery-slider__next &rarr;
+            .gallery-slider__scrollbar
+                .swiper-scrollbar-drag.gallery-slider__drag
     h3.gallery__subtitle More of our favorite cities
     ul.gallery__list
         li.gallery__item Miami

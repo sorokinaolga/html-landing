@@ -14,6 +14,7 @@
     }
 
     &__subtitle {
+        padding-top: 80px;
         line-height: 22px;
         font-weight: 400;
     }
@@ -46,5 +47,41 @@
         bottom: -58px;
         left: 162px;
         background: url(../img/icons/icons.svg#i-about) no-repeat;
+    }
+}
+
+.about-slider {
+    position: static;
+
+    &__image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    &__control {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        padding-top: 8px;
+        padding-right: 102px;
+    }
+
+    &__prev,
+    &__next {
+        width: 25px;
+        color: $ff-color-main;
+        cursor: pointer;
+    }
+
+    &__scrollbar {
+        width: 100%;
+        height: 2px;
+        background-color:#FFFFFF66;
+        cursor: pointer;
+    }
+
+    &__drag {
+        background-color: $ff-color-light;
     }
 }
