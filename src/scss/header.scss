@@ -1,50 +1,50 @@
 .header {
-    min-height: 80px;
+  min-height: 80px;
 
-    &__container {
-        max-width: 1236px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-    }
+  &__container {
+    max-width: 1236px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .nav-list {
-    list-style: none;
-    display: flex;
-    gap: 24px;
-    text-transform: capitalize;
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  text-transform: capitalize;
 
-    &__item {
-        padding: 15px 46px 15px 20px;
-        font-family: $ff-main-bold;
-        line-height: 19.2px;
-        position: relative;
-        cursor: pointer;
+  &__item {
+    padding: 15px 46px 15px 20px;
+    font-family: $ff-main-bold;
+    line-height: 19.2px;
+    position: relative;
+    cursor: pointer;
 
-        &::after {
-            position: absolute;
-            content: '';
-            width: 8px;
-            height: 8px;
-            border-top: 1.5px solid #000000;
-            border-right: 1.5px solid #000000;
-            top: 20px;
-            right: 20px;
-            transform: rotate(135deg);
-        }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-top: 1.5px solid #000000;
+      border-right: 1.5px solid #000000;
+      top: 20px;
+      right: 20px;
+      transform: rotate(135deg);
     }
+  }
 
-    &__btn {
-        border-radius: 8px;
-        background-color: #0000000f;
-        padding: 15px 0;
+  &__btn {
+    border-radius: 8px;
+    background-color: #0000000f;
+    padding: 15px 0;
 
-        a {
-            color: $ff-color-main;
-            text-decoration: none;
-            padding: 15px 20px;
-            vertical-align: middle;
-        }
+    a {
+      color: $ff-color-main;
+      text-decoration: none;
+      padding: 15px 20px;
+      vertical-align: middle;
     }
+  }
 }

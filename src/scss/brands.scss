@@ -1,47 +1,47 @@
 .brands {
-    position: relative;
-    padding: 0 102px 80px;
+  position: relative;
+  padding: 0 102px 80px;
 
-    &__list {
-        display: flex;
-        justify-content: space-between;
-        font-size: 0;
-    }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0;
+  }
 
-    &__item {
-        width: 120px;
-        height: 64px;
-        vertical-align: middle;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-    }
-    &__item--wsj {
-        background-image: url(../img/icons/icons.svg#icon-wsl);
-    }
-    &__item--forbes {
-        background-image: url(../img/icons/icons.svg#icon-forbes);
-    }
-    &__item--bloomberg {
-        background-image: url(../img/icons/icons.svg#icon-bloomberg);
-    }
-    &__item--yahoo {
-        background-image: url(../img/icons/icons.svg#icon-yahoo);
-    }
-    &__item--chicago-tribune {
-        background-image: url(../img/icons/icons.svg#icon-chicago);
-    }
-    &__item--curbed {
-        background-image: url(../img/icons/icons.svg#icon-curbed);
-    }
+  &__item {
+    width: 120px;
+    height: 64px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  &__item--wsj {
+    background-image: url(../img/icons/icons.svg#icon-wsl);
+  }
+  &__item--forbes {
+    background-image: url(../img/icons/icons.svg#icon-forbes);
+  }
+  &__item--bloomberg {
+    background-image: url(../img/icons/icons.svg#icon-bloomberg);
+  }
+  &__item--yahoo {
+    background-image: url(../img/icons/icons.svg#icon-yahoo);
+  }
+  &__item--chicago-tribune {
+    background-image: url(../img/icons/icons.svg#icon-chicago);
+  }
+  &__item--curbed {
+    background-image: url(../img/icons/icons.svg#icon-curbed);
+  }
 
-    &::after {
-        position: absolute;
-        content: '';
-        width: 82px;
-        height: 88px;
-        bottom: -48px;
-        right: 82px;
-        background: url(../img/icons/icons.svg#i-brands) no-repeat;
-    }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 82px;
+    height: 88px;
+    bottom: -48px;
+    right: 82px;
+    background: url(../img/icons/icons.svg#i-brands) no-repeat;
+  }
 }
