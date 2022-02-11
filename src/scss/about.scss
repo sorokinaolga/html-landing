@@ -1,8 +1,11 @@
 .about {
-  position: relative;
   background-color: $color-accent;
-  padding: 120px 0 120px 102px;
   color: $ff-color-light;
+
+  &__container {
+    position: relative;
+    padding: 120px 0 120px 102px;
+  }
 
   h2 {
     max-width: 683px;
@@ -39,7 +42,7 @@
     }
   }
 
-  &::after {
+  &__container::after {
     content: "";
     position: absolute;
     width: 125px;

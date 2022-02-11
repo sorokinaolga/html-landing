@@ -1,6 +1,8 @@
 .brands {
-  position: relative;
-  padding: 0 102px 80px;
+  &__container {
+    position: relative;
+    padding: 0 102px 80px;
+  }
 
   &__list {
     display: flex;
@@ -35,7 +37,7 @@
     background-image: url(../img/icons/icons.svg#icon-curbed);
   }
 
-  &::after {
+  &__container::after {
     position: absolute;
     content: "";
     width: 82px;

@@ -1,7 +1,10 @@
 .gallery {
-  padding: 120px 102px 96px;
   background-color: $color-accent-secondary;
   color: $ff-color-light;
+
+  &__container {
+    padding: 120px 102px 96px;
+  }
 
   h2 {
     font-size: 32px;

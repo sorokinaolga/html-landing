@@ -1,5 +1,7 @@
 .advantages {
-  padding: 92px 102px 95px;
+  &__container {
+    padding: 92px 102px 95px;
+  }
 
   &__title {
     display: flex;

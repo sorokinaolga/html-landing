@@ -1,9 +1,12 @@
 .features {
-  padding: 64px 102px;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
   background-color: $color-secondary;
+
+  &__container {
+    padding: 64px 102px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
 
   h2 {
     font-size: 32px;

@@ -1,11 +1,10 @@
 .promo {
   height: 640px;
   background-color: $color-main;
-  position: relative;
 
   &__container {
-    max-width: 1236px;
-    margin: 0 auto;
+    position: relative;
+    padding: 0 102px;
   }
 
   &__content {
