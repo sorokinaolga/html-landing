@@ -4,13 +4,13 @@ section.promo
       .promo__text
         h1.promo__title We’re reinventing apartment living
         p.promo__description Say goodbye to being trapped in a lease. Landing members have access to thousands of apartments with flexible leases.
-      img(src="@img/promo.png", alt="Promo", width="698", height="680")
-    form.promo-form(action="", method="get")
+      img(src="@img/promo.png" alt="Promo" width="698" height="680")
+    form.promo-form(action="#" method="post")
       .promo-form__box
         label(for="location") Location 
-        input(type="text" name="location" placeholder="Where to?")
+        input(type="text" id="location" name="location" placeholder="Where to?")
       .promo-form__box
         label(for="dates") Dates
-        input(type="text" name="dates" placeholder="How long?")
+        input(type="text" id="dates" name="dates" placeholder="How long?")
       button.promo-form__btn(type="submit") 
         span Search
