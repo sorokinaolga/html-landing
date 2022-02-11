@@ -17,7 +17,7 @@
   }
 
   &__subtitle {
-    padding-top: 80px;
+    margin: 0;
     line-height: 22px;
     font-weight: 400;
   }
@@ -33,12 +33,15 @@
 
   &__item {
     line-height: 16px;
-    padding-top: 16px;
 
     img {
       width: 100%;
       height: auto;
       object-fit: cover;
+    }
+
+    p {
+      margin: 14px 0 0;
     }
   }
 
@@ -55,6 +58,7 @@
 
 .about-slider {
   position: static;
+  padding-bottom: 80px;
 
   &__image img {
     max-width: 100%;
