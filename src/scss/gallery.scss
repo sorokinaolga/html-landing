@@ -3,7 +3,7 @@
   color: $ff-color-light;
 
   &__container {
-    padding: 120px 102px 96px;
+    padding: 120px 0 96px 102px;
   }
 
   h2 {
@@ -33,6 +33,7 @@
     margin: 26px 0 44px;
     padding: 0;
     list-style: none;
+    padding-right: 102px;
   }
 
   &__item {
@@ -48,6 +49,7 @@
   }
 
   &__link {
+    display: inline-block;
     background: #2e2b29;
     border-radius: 8px;
     padding: 16px 24px;
