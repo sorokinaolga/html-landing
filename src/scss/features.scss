@@ -51,4 +51,10 @@
       line-height: 24px;
     }
   }
+
+  img {
+    width: clamp(100px, 50%, 618px);
+    height: auto;
+    object-fit: contain;
+  }
 }
