@@ -1,26 +1,27 @@
 section.about
-  .container.about__container
+  .container.about__container--top
     p.about__subtitle Landing Furnished
     h2 Enjoy all the amenities of a fully furnished Landing home
-    .swiper.about-slider
-      .swiper-wrapper
-        .swiper-slide
-          .about-slider__image
-            img(src="@img/gallery-1.png", width="880", height="480" alt="room")
-        .swiper-slide
-          .about-slider__image
-            img(src="@img/gallery-2.png", width="880", height="480" alt="room")
-        .swiper-slide
-          .about-slider__image
-            img(src="@img/gallery-1.png", width="880", height="480" alt="room")
-        .swiper-slide
-          .about-slider__image
-            img(src="@img/gallery-2.png", width="880", height="480" alt="room")
-      .about-slider__control
-        .about-slider__prev &larr;
-        .about-slider__next &rarr;
-        .about-slider__scrollbar
-          .swiper-scrollbar-drag.about-slider__drag
+  .swiper.about-slider
+    .swiper-wrapper
+      .swiper-slide
+        .about-slider__image
+          img(src="@img/gallery-1.png", width="880", height="480" alt="room")
+      .swiper-slide
+        .about-slider__image
+          img(src="@img/gallery-2.png", width="880", height="480" alt="room")
+      .swiper-slide
+        .about-slider__image
+          img(src="@img/gallery-1.png", width="880", height="480" alt="room")
+      .swiper-slide
+        .about-slider__image
+          img(src="@img/gallery-2.png", width="880", height="480" alt="room")
+    .about-slider__control
+      .about-slider__prev &larr;
+      .about-slider__next &rarr;
+      .about-slider__scrollbar
+        .swiper-scrollbar-drag.about-slider__drag
+  .container.about__container--bottom
     h3.about__subtitle Every Landing includes
     ul.about__list
       li.about__item
