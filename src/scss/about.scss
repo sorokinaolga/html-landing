@@ -64,6 +64,10 @@
   padding-left: calc((100vw - 1440px) / 2 + 102px);
   padding-bottom: 80px;
 
+  @media (max-width: 1440px) {
+    padding-left: 102px;
+  }
+
   &__image img {
     max-width: 100%;
     height: auto;
@@ -76,6 +80,10 @@
     align-items: center;
     padding-top: 8px;
     padding-right: calc((100vw - 1440px) / 2 + 102px);
+
+    @media (max-width: 1440px) {
+      padding-right: 102px;
+    }
   }
 
   &__prev,
