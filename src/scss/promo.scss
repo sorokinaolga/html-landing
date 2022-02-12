@@ -82,10 +82,17 @@
       color: #090808;
       font-size: 13px;
       margin-top: 8px;
+      outline: none;
     }
 
     input::placeholder {
       color: #090808;
+    }
+
+    input:focus {
+      &::placeholder {
+        color: #cecdca;
+      }
     }
   }
 
