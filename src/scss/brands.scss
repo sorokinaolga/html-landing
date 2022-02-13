@@ -1,7 +1,7 @@
 .brands {
   &__container {
     position: relative;
-    padding: 0 102px 80px;
+    padding: 0 7% 80px;
   }
 
   &__list {
@@ -29,12 +29,24 @@
   }
   &__item--yahoo {
     background-image: url(../img/icons/icons.svg#icon-yahoo);
+
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
   &__item--chicago-tribune {
     background-image: url(../img/icons/icons.svg#icon-chicago);
+
+    @media (max-width: 750px) {
+      display: none;
+    }
   }
   &__item--curbed {
     background-image: url(../img/icons/icons.svg#icon-curbed);
+
+    @media (max-width: 850px) {
+      display: none;
+    }
   }
 
   &__container::after {

@@ -1,6 +1,6 @@
 .advantages {
   &__container {
-    padding: 92px 102px 95px;
+    padding: 7% 7% 7%;
   }
 
   &__title {
@@ -18,12 +18,21 @@
       span {
         font-weight: 700;
       }
+
+      @media (max-width: 750px) {
+        font-size: 24px;
+        line-height: 28px;
+      }
     }
 
     p {
       font-size: 19px;
       line-height: 30px;
       color: #787573;
+
+      @media (max-width: 650px) {
+        display: none;
+      }
     }
   }
 
@@ -76,6 +85,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 55px;
 
+    @media (max-width: 650px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     div {
       padding-top: 96px;
       background-repeat: no-repeat;
@@ -84,6 +97,11 @@
     dt {
       font-size: 20px;
       line-height: 30px;
+
+      @media (max-width: 750px) {
+        font-size: 18px;
+        line-height: 20px;
+      }
     }
 
     dd {
@@ -91,6 +109,12 @@
       font-size: 16px;
       line-height: 24px;
       margin-left: 0;
+
+      @media (max-width: 750px) {
+        padding-top: 10px;
+        font-size: 16px;
+        line-height: 20px;
+      }
     }
   }
 }

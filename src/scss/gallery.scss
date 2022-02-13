@@ -3,10 +3,10 @@
   color: $ff-color-light;
 
   &__container--top {
-    padding: 120px 0 0 102px;
+    padding: 8% 0 0 7%;
   }
   &__container--bottom {
-    padding: 0 0 96px 102px;
+    padding: 0 0 7% 7%;
   }
 
   h2 {
@@ -14,6 +14,10 @@
     line-height: 45px;
     font-weight: 400;
     margin: 0 0 23px;
+
+    @media (max-width: 650px) {
+      max-width: 80%;
+    }
   }
 
   p {
@@ -21,6 +25,10 @@
     color: #a7a6a4;
     max-width: 421px;
     margin: 0 0 80px;
+
+    @media (max-width: 650px) {
+      max-width: 80%;
+    }
   }
 
   &__subtitle {
@@ -36,7 +44,15 @@
     margin: 26px 0 44px;
     padding: 0;
     list-style: none;
-    padding-right: 102px;
+    padding-right: 7%;
+
+    @media (max-width: 800px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (max-width: 650px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__item {
@@ -64,15 +80,25 @@
 
 .gallery-slider {
   position: static;
-  padding-left: calc((100vw - 1440px) / 2 + 102px);
+  padding-left: calc((100vw - 1440px) / 2 + 7%);
 
   @media (max-width: 1440px) {
-    padding-left: 102px;
+    padding-left: 7%;
   }
 
   &__image img {
     max-width: 100%;
     height: auto;
+
+    @media (max-width: 1000px) {
+      height: 180px;
+      width: 100%;
+    }
+
+    @media (max-width: 750px) {
+      max-width: 100%;
+      height: auto;
+    }
   }
 
   &__control {
@@ -80,10 +106,10 @@
     gap: 24px;
     align-items: center;
     padding-top: 8px;
-    padding-right: calc((100vw - 1440px) / 2 + 102px);
+    padding-right: calc((100vw - 1440px) / 2 + 7%);
 
     @media (max-width: 1440px) {
-      padding-right: 102px;
+      padding-right: 7%;
     }
   }
 

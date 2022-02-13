@@ -3,11 +3,11 @@
   color: $ff-color-light;
 
   &__container--top {
-    padding: 120px 0 0 102px;
+    padding: 8% 0 0 7%;
   }
   &__container--bottom {
     position: relative;
-    padding: 0 0 120px 102px;
+    padding: 0 0 8% 7%;
   }
 
   h2 {
@@ -17,6 +17,16 @@
     font-weight: 400;
     margin: 0;
     padding: 48px 0 104px;
+
+    @media (max-width: 750px) {
+      font-size: 32px;
+      line-height: 40px;
+      padding: 48px 0 54px;
+    }
+
+    @media (max-width: 650px) {
+      max-width: 80%;
+    }
   }
 
   &__subtitle {
@@ -31,7 +41,11 @@
     gap: 24px;
     list-style: none;
     margin: 32px 0 0;
-    padding: 0 102px 0 0;
+    padding: 0 7% 0 0;
+
+    @media (max-width: 750px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   &__item {
@@ -61,11 +75,11 @@
 
 .about-slider {
   position: static;
-  padding-left: calc((100vw - 1440px) / 2 + 102px);
+  padding-left: calc((100vw - 1440px) / 2 + 7%);
   padding-bottom: 80px;
 
   @media (max-width: 1440px) {
-    padding-left: 102px;
+    padding-left: 7%;
   }
 
   &__image img {
@@ -79,10 +93,10 @@
     gap: 24px;
     align-items: center;
     padding-top: 8px;
-    padding-right: calc((100vw - 1440px) / 2 + 102px);
+    padding-right: calc((100vw - 1440px) / 2 + 7%);
 
     @media (max-width: 1440px) {
-      padding-right: 102px;
+      padding-right: 7%;
     }
   }
 

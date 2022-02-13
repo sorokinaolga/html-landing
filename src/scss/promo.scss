@@ -1,10 +1,10 @@
 .promo {
-  height: 640px;
+  max-height: 640px;
   background-color: $color-main;
 
   &__container {
     position: relative;
-    padding: 0 102px;
+    padding: 0 7%;
   }
 
   &__content {
@@ -13,7 +13,11 @@
   }
 
   &__text {
-    width: 371px;
+    max-width: 371px;
+
+    @media (max-width: 850px) {
+      padding-right: 10px;
+    }
   }
 
   img {
@@ -29,19 +33,39 @@
     font-size: 48px;
     line-height: 58px;
     margin: 0;
+
+    @media (max-width: 1050px) {
+      font-size: 36px;
+      line-height: 46px;
+    }
+
+    @media (max-width: 850px) {
+      padding-top: 100px;
+    }
+
+    @media (max-width: 750px) {
+      font-size: 24px;
+      line-height: 28px;
+      padding-top: 80px;
+    }
   }
 
   &__description {
     font-size: 18px;
     line-height: 29px;
     color: $ff-color-secondary;
+
+    @media (max-width: 850px) {
+      font-size: 16px;
+      line-height: 18px;
+    }
   }
 }
 
 .promo-form {
   position: absolute;
   top: 415px;
-  left: 102px;
+  left: 7%;
   z-index: 1;
   display: flex;
   align-items: center;
@@ -51,6 +75,18 @@
   background-color: $color-white;
   box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.12);
   border-radius: 8px;
+
+  @media (max-width: 1140px) {
+    position: static;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: 850px) {
+    flex-direction: column;
+    height: 208px;
+    width: 200px;
+  }
 
   &__btn {
     color: $ff-color-light;
@@ -68,6 +104,11 @@
       background-repeat: no-repeat;
       background-position: -8px 0;
     }
+
+    @media (max-width: 850px) {
+      margin-right: 0;
+      margin-bottom: 14px;
+    }
   }
 
   &__box {
@@ -76,6 +117,10 @@
     padding-left: 30px;
     padding-right: 16px;
     flex-grow: 1;
+
+    @media (max-width: 850px) {
+      padding: 14px 20px;
+    }
 
     label {
       color: #787573;
@@ -104,5 +149,9 @@
 
   &__box:nth-child(odd) {
     border-right: 1px solid #cecdca;
+
+    @media (max-width: 850px) {
+      border: none;
+    }
   }
 }

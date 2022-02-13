@@ -5,7 +5,7 @@
   line-height: 21px;
 
   &__container {
-    padding: 96px 102px 48px;
+    padding: 96px 7% 48px;
   }
 
   &__main {
@@ -13,6 +13,10 @@
     grid-template-columns: repeat(2, 1fr);
     border-bottom: 1px solid #e5e7eb;
     padding-bottom: 65px;
+
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__text {
@@ -20,6 +24,14 @@
     color: #ffffffcc;
     max-width: 342px;
     padding-top: 30px;
+
+    @media (max-width: 950px) {
+      max-width: 250px;
+    }
+
+    @media (max-width: 800px) {
+      display: none;
+    }
   }
 
   &__list {
@@ -27,6 +39,10 @@
     list-style: none;
     margin: 0;
     padding: 0;
+
+    @media (max-width: 400px) {
+      flex-direction: column;
+    }
   }
 
   &__sublist {
@@ -55,8 +71,16 @@
     color: #ffffff4d;
     padding-top: 36px;
 
+    @media (max-width: 500px) {
+      justify-content: flex-end;
+    }
+
     p {
       margin: 0;
+
+      @media (max-width: 500px) {
+        display: none;
+      }
     }
   }
 

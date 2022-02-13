@@ -2,9 +2,13 @@
   min-height: 80px;
 
   &__container {
-    padding: 0 102px;
+    padding: 0 7%;
     display: flex;
     justify-content: space-between;
+  }
+
+  img {
+    padding: 24px 0;
   }
 }
 
@@ -13,6 +17,10 @@
   display: flex;
   gap: 24px;
   text-transform: capitalize;
+
+  @media (max-width: 750px) {
+    display: none;
+  }
 
   &__item {
     padding: 15px 46px 15px 20px;
@@ -45,5 +53,35 @@
       padding: 15px 20px;
       vertical-align: middle;
     }
+  }
+}
+
+.menu-btn {
+  display: none;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+
+  @media (max-width: 750px) {
+    display: flex;
+  }
+
+  & > span,
+  & > span::before,
+  & > span::after {
+    display: block;
+    position: relative;
+    width: 20px;
+    height: 1.5px;
+    background-color: #616161;
+  }
+
+  & > span::before {
+    content: "";
+    top: -8px;
+  }
+  & > span::after {
+    content: "";
+    top: 8px;
   }
 }
